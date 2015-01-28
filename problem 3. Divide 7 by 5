@@ -1,6 +1,11 @@
-Enter file contents here123
-123
-123
+using System;
 
-123
-123
+public class Program
+{
+    public static void Main()
+	{
+		int number = int.Parse(Console.ReadLine());
+	
+		bool result = ( number % 5 == 0 && number % 7 == 0 && number != 0) ? true : false;
+
+		Console.WriteLine(result);
