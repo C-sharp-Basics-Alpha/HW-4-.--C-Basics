@@ -1,0 +1,18 @@
+//bitwise operation
+if ((x & 1) == 0)
+       //even number
+else
+      //odd number
+
+//bit shifting
+if (((x >> 1) << 1) == x)
+       //even number
+else
+       //odd number
+
+//using native library
+System.Math.DivRem((long)x, (long)2, out outvalue);
+if ( outvalue == 0)
+       //even number
+else
+       //odd number
