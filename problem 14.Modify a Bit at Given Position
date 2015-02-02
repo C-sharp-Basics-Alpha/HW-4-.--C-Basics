@@ -16,7 +16,7 @@ public class Program
 		int v = int.Parse(Console.ReadLine());
 		if (v == 0)
 		{
-			n = n & (~(1 << p));
+			n = n & (~(1 << p));  
 		}
 			else
 			{
@@ -25,5 +25,8 @@ public class Program
 		Console.WriteLine(((n & mask)!=0 ? 1:0 ));
 		string NumberBinaryString2 = Convert.ToString(n, 2);
 		Console.WriteLine(NumberBinaryString2);
+		//on this line convert the new number from binnary to decimal
+		string newNumber = Convert.ToString(n, 10);
+		Console.WriteLine(newNumber);		
 	}
 }
